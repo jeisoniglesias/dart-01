@@ -1,10 +1,6 @@
 import 'dart:io';
 
-int returnNumber() {
-  stdout.write('Ingrese un número: ');
-  var numero = stdin.readLineSync();
-  return int.parse(numero!);
-}
+import '../lib/returnInt.dart';
 
 bool esPrimo(int n) {
   for (var i = 2; i <= n / i; ++i) {
